@@ -1,0 +1,103 @@
+.SVG-container{
+	margin:auto;
+	padding:0;
+	position:relative;
+	width:800px;
+	height:300px;
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+}
+
+
+.SVG-container  .icon{
+	margin-top:160px;
+	width:900px;
+	position:relative;
+}
+.SVG-container  .icon path{
+	fill:transparent;
+	stroke-width:0.65;
+	stroke:#10a399;
+}
+.SVG-container  .icon.doc path{
+	stroke-dasharray: 85;
+	stroke-dashoffset: 0;
+	cursor:pointer;
+
+}
+.SVG-container  .icon.doc:hover path{
+	animation: animate-doc 2s linear forwards
+
+}
+@keyframes animate-doc{
+	0%{
+		stroke-dashoffset: 0;
+
+	}
+	40%{
+		stroke-dashoffset: 85;
+	}
+	80%{
+		stroke-dashoffset: 170;
+		fill:transparent;	
+	}
+	100%{
+		stroke-dashoffset: 170;
+		fill:#10a399;
+	}
+}
+.SVG-container  .icon.steth path{
+	stroke-dasharray: 142;
+	stroke-dashoffset: 0;
+	cursor:pointer;
+
+}
+.SVG-container  .icon.steth:hover path{
+	animation: animate-doc 2s linear forwards
+
+}
+@keyframes animate-steth{
+	0%{
+		stroke-dashoffset: 0;
+
+	}
+	40%{
+		stroke-dashoffset: 142;
+	}
+	80%{
+		stroke-dashoffset: 170;
+		fill:transparent;	
+	}
+	100%{
+		stroke-dashoffset: 170;
+		fill:#10a399;
+	}
+}
+.SVG-container  .icon.card path{
+	stroke-dasharray: 142;
+	stroke-dashoffset: 0;
+	cursor:pointer;
+
+}
+.SVG-container  .icon.card:hover path{
+	animation: animate-doc 2s linear forwards
+
+}
+@keyframes animate-card{
+	0%{
+		stroke-dashoffset: 0;
+
+	}
+	40%{
+		stroke-dashoffset: 142;
+	}
+	80%{
+		stroke-dashoffset: 170;
+		fill:transparent;	
+	}
+	100%{
+		stroke-dashoffset: 170;
+		fill:#10a399;
+	}
+}
